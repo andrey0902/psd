@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/roboto/Roboto-Medium.ttf?f0akox") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'eraser';
+  src: url("../fonts/eraser/erasdust.ttf?f0akox") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Traveling';
+  src: url("../fonts/main/TravelingTypewriter.ttf?f0akox") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'jennnif';
+  src: url("../fonts/link/asongforjenniferbold.ttf?f0akox") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
