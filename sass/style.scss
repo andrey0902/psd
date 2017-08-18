@@ -413,16 +413,11 @@ p{
   width: 100%;
   height: 100%;
 }
-/*.container{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}*/
+
 .slider-img{
   width: 100%;
   height: 100%;
-  -o-fit-object: cover;
-  fit-object: cover;
+  object-fit: cover;
 }
 .little{
   width: 50px;
@@ -1010,8 +1005,6 @@ p{
     height: 11%;
     max-width: 200px;
     max-height: 50px;
-    max-width: 200px;
-    max-height: 50px;
     box-shadow: -80px 0 8px rgba(0, 0, 0, 0.4);
     transform: skew(50deg);
     transform-origin: 0 100%;
@@ -1088,8 +1081,13 @@ p{
   text-align: center;
   text-transform: uppercase;
   margin: 0 5px;
+  transition: .3s;
   border: 1px solid rgba(238, 238, 238, 0.24);
   background-color: rgba(255, 255, 255, 0.15);
+}
+.btn-form:hover{
+  border: 1px solid rgba(238, 238, 238, 0.34);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .get-in-touch{
   height: 442px;
@@ -1139,23 +1137,13 @@ p{
     margin-left: 7px;
   }
 }
-.horizontal-slider{
-  height: 120px;
-  background-color: #008fd5;
-}
 
 .our-team{
   height: 549px;
   background: #35404b;
 }
-.brand{
-  height:153px;
-  background: red;
-}
-.top-footer{
-  height: calc(373px - 54px);
-  background: #19242a;
-}
+
+
 .bottom-footer{
   height: 54px;
   background: #141d22;
@@ -1188,8 +1176,12 @@ p{
     height: 600px;
   }
 }
-
-@import "media";
 .display{
-  display: block;
-}
+   display: block;
+ }
+
+@import "our-team";
+@import "brand";
+@import "horizontal-sliderl";
+@import "top-footer";
+@import "media";

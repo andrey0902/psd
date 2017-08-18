@@ -148,4 +148,7 @@
         gallery:{enabled:true}
         // other options
     });
+   let a =  document.querySelector('select').value='';
+    console.log(a);
+
 })();
