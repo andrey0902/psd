@@ -1,0 +1,72 @@
+.horizontal-slider{
+  height: 120px;
+  background-color: #008fd5;
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    display: inline;
+    transition: .3s;
+  }
+  .icon:hover{
+    color: #d9d9d9;
+  }
+  .text-slider{
+    width: 889px;
+    margin-left: 24px;
+    margin-right: 66px;
+
+    p{
+      width: 100%;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.2rem;
+    }
+    .mark{
+      color: #bbdbef;
+      font-size: 1rem;
+      font-style: italic;
+      line-height: 1.1rem;
+      background: none;
+    }
+    .mark-two{
+      color: #bbdbef;
+      font-size: .75rem;
+      font-style: italic;
+      line-height: 1.2rem;
+    }
+  }
+  .navigation-slider{
+    width: 60px;
+    .icon{
+      color: white;
+      font-size: 1rem;
+    }
+  }
+
+}
+.icon-slider{
+  height: 120px;
+  width:120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.icon-slider::after {
+  content: '';
+  position: absolute;
+  right: -32px; top: 22px;
+  border: 16px solid transparent;
+  border-left: 16px solid rgba(255, 255, 255, 0.12);
+  border-top: 16px solid rgba(255, 255, 255, 0.12);
+}

@@ -1,0 +1,114 @@
+.before{
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -30px;
+  width: 30px;
+  height:30px;
+}
+
+.top-footer{
+  height: calc(373px - 54px);
+  background: #19242a;
+
+  & .wrapper{
+    margin-top: 30px;
+  }
+  .logo-text{
+    color: #547e93;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .text{
+    color: #7ca1b3;
+    font-family: open-sans;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin: 20px 0 0 0;
+  }
+  h2{
+    color: #7ca1b3;
+    height: 3rem;
+    font-family: open-sans;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 3.3rem;
+  }
+  .date{
+    color: #7ca1b3;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .post-point{
+    color: #bdd2dc;
+    font-size: 13px;
+    font-style: italic;
+  }
+  .line{
+    height: 1px;
+    width: 100%;
+    background-color: #23323a;
+  }
+  .line + .text{
+    margin-top: 10px;
+  }
+  .contact-list{
+    margin-left: 30px;
+  }
+  .contact-list>li{
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .contact-add:before{
+    @extend .before;
+    background: url("../img/location-copy.png") no-repeat;
+  }
+  .contact-tel:before{
+    @extend .before;
+    background: url("../img/mobile-copy.png") no-repeat;
+  }
+  .contact-email:before{
+    @extend .before;
+    background: url("../img/mail-copy.png") no-repeat;
+  }
+  .select{
+    margin-top: 21px;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    padding: 5px 45px 5px 10px;
+    background: #23323a url('../img/arrow.png') no-repeat 90% center;
+    border: none;
+
+    & *{
+      background: red;
+      border-radius: 20px;
+      display: block;
+      width: 10px;
+    }
+
+    option{
+      width: inherit;
+      background: red;
+    }
+
+  }
+  .select:focus{
+    outline: none;
+  }
+  .select > option{
+    background: white;
+  }
+  .follow{
+    color: #7ca1b3;
+    font-family: open-sans;
+    font-size: 1.12rem;
+    font-weight: 300;
+    padding-top: 1.6rem;
+  }
+}
